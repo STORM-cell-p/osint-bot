@@ -630,7 +630,7 @@ def scan_number(raw):
     return info
     
     def collect_images_from_number(info):
-    images = []
+        images = []
     sm = info.get("sync_me") or {}
     if sm.get("image"):
         images.append(("Sync.me", sm["image"]))
