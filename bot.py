@@ -627,7 +627,9 @@ def scan_number(raw):
         info["serper"] = check_serper('"' + info["e164"] + '"')
     else:
         info["serper"] = {"status": "no_key"}
-    return info def collect_images_from_number(info):
+    return info
+    
+    def collect_images_from_number(info):
     images = []
     sm = info.get("sync_me") or {}
     if sm.get("image"):
